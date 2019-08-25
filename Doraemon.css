@@ -5,9 +5,7 @@
     --doraemon-beak: red;
     --doraemon-innerTop: white;
     --doraemon-mouth: red;
-    --doraemon-tongue: #cc0000;
 
-    /* change code above */
     position: relative;
     margin: auto;
     display: block;
@@ -16,34 +14,50 @@
     height: 300px;
 }
 
-.dleft-eye {
+.doraemon-left-eye {
     background: white;
     width: 20%;
     height: 25%;
     border-radius: 50%;
-    border: 2px solid black;
-    margin-top: 5%;
-    margin-left: 30%;
+    border: 1px solid black;
+    top: -5px;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 29%;
 }
 
-.dright-eye {
+.doraemon-right-eye {
+    margin-left: 50%;
     background: white;
     width: 20%;
     height: 25%;
     border-radius: 50%;
-    border: 2px solid black;
-    margin-top: -27%;
-    margin-left: 52%;
+    border: 1px solid black;
+    top: -5px;
+    position: absolute;
+    margin-top: -10%;
 }
 
 .doraemon-sparkle {
     position: absolute;
     background: black;
-    width: 4%;
-    height: 6%;
+    width: 21%;
+    height: 45%;
     border-radius: 50%;
-    top: 6%;
-    left: 21%;
+    top: 20%;
+    left: 50%;
+}
+
+.doraemon-nose {
+    margin-left: 45%;
+    background: red;
+    width: 9%;
+    height: 10%;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 20px;
+    position: absolute;
+    margin-top: -10%;
 }
 
 .doraemon-top {
@@ -78,26 +92,59 @@
     transform: rotate(180deg);
 }
 
-.doraemon-tongue {
-    background: var(--doraemon-tongue);
-    width: 60%;
-    height: 40%;
-    border-bottom-right-radius: 150%;
-    border-bottom-left-radius: 150%;
-border-top-left-radius: 180%;
-border-top-right-radius: 180%;
-position:absolute;
-    top: 20%;
-    left: 25%;
+.doraemon-pocket {
+    position: absolute;
+    background: white;
+    width: 65%;
+    height: 35%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    top: 38%;
+    left: 19%;
+    transform: rotate(180deg);
+    border: 1px solid black;
 }
-/* .doraemon-bottom {
-top: 100%;
-left: 25%;
-background: var(--penguin-skin, gray);
-width: 50%;
-height: 45%;
-border-radius: 0% 0% 60% 60%;
-} */
+
+.doraemon-filler {
+    top: 85%;
+    left: 24%;
+    position: absolute;
+    background: white;
+    width: 9%;
+    height: 23%;
+    border-top-left-radius: 42%;
+    border-top-right-radius: 38%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 24%;
+}
+
+.doraemon-bottom {
+    top: -48%;
+    left: 7%;
+    position: relative;
+    background: #66b3ff;
+    width: 39%;
+    height: 38%;
+    border-top-left-radius: 23%;
+    border-top-right-radius: 23%;
+    border-bottom-left-radius: 22%;
+    border-bottom-right-radius: 22%;
+    /* border-radius: 69% 74% 132% 146%; */
+    border: 1px solid black;
+}
+
+.doraemon-bottominner {
+    top: 0%;
+    left: 9%;
+    position: absolute;
+    background: white;
+    width: 81%;
+    height: 67%;
+    /* border-bottom-left-radius: 33px; */
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
 
 .doraemon-innersparkle {
     position: absolute;
@@ -109,126 +156,133 @@ border-radius: 0% 0% 60% 60%;
     left: 45%;
 }
 
-.penguin {
-
-    /* change code below */
-    --penguin-skin: black;
-    --penguin-belly: gray;
-    --penguin-beak: yellow;
-    /* change code above */
+.doraemon-tie {
     position: relative;
-    margin: auto;
-    display: block;
-    margin-top: 5%;
-    width: 300px;
-    height: 300px;
+    background: red;
+    width: 35%;
+    height: 2%;
+    border-radius: 50%;
+    top: -48%;
+    left: 10%;
 }
 
-.penguin-top {
-    top: 10%;
-    left: 25%;
-    background: var(--penguin-skin, gray);
-    width: 50%;
-    height: 45%;
-    border-radius: 70% 70% 60% 60%;
+.doraemon-left-feet {
+    top: -55%;
+    left: 8%;
+    position: relative;
+    border: 1px black solid;
+    border-radius: 50%;
+    height: 28px;
+    background: white;
+    width: 49px;
 }
 
-.penguin-bottom {
-    top: 40%;
-    left: 23.5%;
-    background: var(--penguin-skin, gray);
-    width: 53%;
-    height: 45%;
-    border-radius: 70% 70% 100% 100%;
+.doraemon-right-feet {
+    top: -64%;
+    left: 32%;
+    position: relative;
+    border: 1px black solid;
+    border-radius: 50%;
+    height: 28px;
+    background: white;
+    width: 49px;
+
 }
+
+.doraemon-bell {
+    position: absolute;
+    background: yellow;
+    width: 25%;
+    height: 20%;
+    border-radius: 46% 37% 46% 37%;
+    top: -12%;
+    left: 38%;
+
+}
+
+.doraemon-innerbell {
+    position: absolute;
+    background: yellow;
+    width: 92%;
+    height: 2%;
+    border-radius: 50%;
+    top: 34%;
+    left: 1%;
+    border: 1px solid black;
+
+}
+
+.doraemon-innerbellCircle {
+    position: relative;
+    /* background: gray; */
+    width: 5%;
+    height: 2%;
+    border-radius: 50%;
+    top: 43%;
+    left: 43%;
+    border: 1px solid black;
+}
+
+.doraemon-innerline {
+    position: relative;
+    /* background: gray; */
+    width: 1%;
+    height: 27%;
+    border-radius: 50%;
+    top: 43%;
+    left: 46%;
+    border: 1px solid black;
+}
+
 
 .right-hand {
-    top: 0%;
-    left: -5%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 120% 30%;
-    transform: rotate(45deg);
-    z-index: -1;
+    position: relative;
+    top: -27%;
+    left: 40%;
+    background: #66b3ff;
+    width: 10%;
+    height: 23%;
+    border-radius: 34% 130% 48% 59%;
+    transform: rotate(312deg);
+    /* z-index: -1; */
+    border: 1px solid black;
 }
 
 .left-hand {
-    top: 0%;
-    left: 75%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 30% 120%;
-    transform: rotate(-45deg);
+    position: relative;
+    top: -11%;
+    left: 1%;
+    background: #66b3ff;
+    width: 10%;
+    height: 23%;
+    border-radius: 60% 130% 90% 90%;
+    transform: rotate(131deg);
+    /* z-index: -1; */
+    border: 1px solid black;
+}
+
+.doraemon-left-handBall {
+    position: absolute;
+    top: 35%;
+    left: -10%;
+    background: white;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
     z-index: -1;
+    border: 1px solid black;
 }
 
-.right-cheek {
-    top: 15%;
-    left: 35%;
-    background: var(--penguin-belly, white);
-    width: 60%;
-    height: 70%;
-    border-radius: 70% 70% 60% 60%;
-}
-
-.left-cheek {
-    top: 15%;
-    left: 5%;
-    background: var(--penguin-belly, white);
-    width: 60%;
-    height: 70%;
-    border-radius: 70% 70% 60% 60%;
-}
-
-.belly {
-    top: 60%;
-    left: 2.5%;
-    background: var(--penguin-belly, white);
-    width: 95%;
-    height: 100%;
-    border-radius: 120% 120% 100% 100%;
-}
-
-.right-feet {
-    top: 85%;
-    left: 60%;
-    background: var(--penguin-beak, orange);
-    width: 15%;
-    height: 30%;
-    border-radius: 50% 50% 50% 50%;
-    transform: rotate(-80deg);
-    z-index: -2222;
-}
-
-.left-feet {
-    top: 85%;
-    left: 25%;
-    background: var(--penguin-beak, orange);
-    width: 15%;
-    height: 30%;
-    border-radius: 50% 50% 50% 50%;
-    transform: rotate(80deg);
-    z-index: -2222;
-}
-
-.right-eye {
-    top: 45%;
-    left: 60%;
-    background: black;
-    width: 15%;
-    height: 17%;
+.doraemon-right-handBall {
+    position: absolute;
+    top: 63%;
+    left: 52%;
+    background: white;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
-}
-
-.left-eye {
-    top: 45%;
-    left: 25%;
-    background: black;
-    width: 15%;
-    height: 17%;
-    border-radius: 50%;
+    z-index: -1;
+    border: 1px solid black;
 }
 
 .sparkle {
@@ -240,46 +294,76 @@ border-radius: 0% 0% 60% 60%;
     border-radius: 50%;
 }
 
-.blush-right {
-    top: 65%;
-    left: 15%;
-    background: pink;
-    width: 15%;
-    height: 10%;
-    border-radius: 50%;
-}
-
-.blush-left {
-    top: 65%;
-    left: 70%;
-    background: pink;
-    width: 15%;
-    height: 10%;
-    border-radius: 50%;
-}
-
-.beak-top {
-    top: 60%;
-    left: 40%;
-    background: var(--penguin-beak, orange);
-    width: 20%;
-    height: 10%;
-    border-radius: 50%;
-}
-
-.beak-bottom {
-    top: 65%;
-    left: 42%;
-    background: var(--penguin-beak, orange);
-    width: 16%;
-    height: 10%;
-    border-radius: 50%;
-}
-
 body {
-    background: #c6faf1;
+    background: white;
 }
 
-.penguin * {
+.doraemon-top-centerLine {
+    top: 19%;
+    left: 50%;
+    background: black;
+    width: 1%;
+    height: 23%;
     position: absolute;
+}
+
+.doraemon-right-line1 {
+    top: 0%;
+    left: 80%;
+    background: black;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(-112deg)
+}
+
+.doraemon-right-line2 {
+    top: 12%;
+    left: 80%;
+    background: black;
+    width: 1%;
+    height: 32%;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.doraemon-right-line3 {
+    top: 24%;
+    left: 80%;
+    background: black;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(-72deg);
+}
+
+.doraemon-left-line1 {
+    top: -3%;
+    left: 20%;
+    background: black;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(-73deg);
+
+}
+
+.doraemon-left-line2 {
+    top: 8%;
+    left: 20%;
+    background: black;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.doraemon-left-line3 {
+    top: 23%;
+    left: 22%;
+    background: black;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(-113deg);
 }
