@@ -1,3 +1,38 @@
+.doraemon-bambooCopter-Base {
+    width: 16px;
+    height: 7px;
+    background-color: #ffcc00;
+    margin-left: -74px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.doraemon-bambooCopter-line {
+    width: 3px;
+    height: 15px;
+    background-color: #ffcc00;
+    margin-left: -68px;
+}
+
+.doraemon-bambooCopter {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 10px;
+}
+
+.doraemon-bambooCopter-Wing {
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 53px;
+    height: 16px;
+    margin-left: -92px;
+    border-radius: 50%;
+    background-color: #e6b800;
+    background-image: repeating-radial-gradient(circle,gray 7%,#e6b800 14%);
+}
 .doraemon {
     /* change code below */
     --doraemon-skin: #66b3ff;
@@ -9,7 +44,6 @@
     position: relative;
     margin: auto;
     display: block;
-    margin-top: 5%;
     width: 300px;
     height: 300px;
 }
@@ -112,8 +146,8 @@
     background: white;
     width: 9%;
     height: 23%;
-    border-top-left-radius: 42%;
-    border-top-right-radius: 38%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 44%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 24%;
 }
@@ -191,7 +225,7 @@
 
 .doraemon-bell {
     position: absolute;
-    background: yellow;
+    background: #ffcc00;
     width: 25%;
     height: 20%;
     border-radius: 46% 37% 46% 37%;
@@ -202,7 +236,7 @@
 
 .doraemon-innerbell {
     position: absolute;
-    background: yellow;
+    background: #ffcc00;
     width: 92%;
     height: 2%;
     border-radius: 50%;
